@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            transition: background-color 0.8s;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        #gifContainer {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+        }
+        .gif {
+            display: inline-block;
+            margin-right: 10px;
+            height: 100px; /* Set height or width to maintain aspect ratio */
+        }
+        @keyframes slide {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        .sliding {
+            animation: slide 15s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="YOUR_TWITTER_URL" class="button">Follow us on Twitter</a>
+        <a href="YOUR_TELEGRAM_GROUP_URL" class="button">Join our Telegram Group</a>
+    </div>
+    <div id="gifContainer">
+        <div class="sliding">
+            <img src="/Users/matasalisauskas/Desktop/web/cats_vs_dogs/giphy.gif" class="gif">
+            <img src="/Users/matasalisauskas/Desktop/web/cats_vs_dogs/giphy.gif" class="gif">
+            <img src="/Users/matasalisauskas/Desktop/web/cats_vs_dogs/giphy.gif" class="gif">
+            <!-- Repeat GIFs to fill and continuously loop -->
+            <img src="/Users/matasalisauskas/Desktop/web/cats_vs_dogs/giphy.gif" class="gif">
+            <img src="/Users/matasalisauskas/Desktop/web/cats_vs_dogs/giphy.gif" class="gif">
+            <img src="/Users/matasalisauskas/Desktop/web/cats_vs_dogs/giphy.gif" class="gif">
+        </div>
+    </div>
+</body>
+</html>
